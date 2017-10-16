@@ -1,0 +1,104 @@
+body{
+	background-color: #F9F9F9;
+}
+.ladoEsquerdo{
+	background-color: #F9F9F9;
+	padding: 20px 20px 20px 30px;
+	min-height: 758px;
+}
+.topo{
+	margin: 0 40px;
+	padding: 15px 0;
+	border-bottom: 1px solid #C6C6C6;
+}
+.tituloPrincipal{
+	font-family: 'Asap', sans-serif;
+	font-size: 3.3em;
+}
+.topo small{
+	font-family: 'Slabo 27px', serif;
+	font-size: 1.2em;
+	color: #777;
+	font-style: italic;
+}
+#formulario{
+	margin: 65px 40px;
+}
+form label{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+form input[type='text']{
+	margin-bottom: 22px;
+	text-transform: uppercase;
+}
+form input[type='submit']{
+	padding: 12px 24px;
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+}
+form .text-center{
+	margin-top: 25px;
+}
+.ladoDireito{
+	background-color:#F9F9F9;
+	padding:60px 20px;
+	min-height: 758px;
+}
+.scroll{
+	overflow-y: scroll;
+	height: 630px;
+}
+.scroll::-webkit-scrollbar-track {
+    background-color: #F9F9F9;
+}
+.scroll::-webkit-scrollbar {
+    width: 5px;
+    background: #F4F4F4;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background: #DAD7D7;
+    border-radius: 120px;
+}
+.tabelaRegistrados{
+	font-family: 'Roboto', sans-serif;
+}
+.tabelaRegistrados thead th{
+	font-size: 1.3em;
+	font-weight: normal;
+}
+@media screen and (max-width: 992px) {
+	.ladoEsquerdo{
+		min-height: 600px;
+	}
+	#formulario{
+		margin: 35px 40px;
+	}
+	.ladoDireito{
+		padding:30px 20px;
+		min-height: 600px;
+	}
+}
+@media screen and (max-width: 460px){
+	.ladoEsquerdo{
+		padding: 20px 0;
+		min-height: 530px;
+	}
+	.tituloPrincipal{
+		font-size: 2.8em;
+	}
+	.topo small{
+		font-size: 1.1em;
+	}
+	form label{
+		font-size: 1.4em;
+		font-weight: normal;
+	}
+	#formulario{
+		margin: 20px 30px;
+	}
+	.ladoDireito{
+		padding: 15px;
+	}
+}
