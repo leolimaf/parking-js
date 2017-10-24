@@ -11,7 +11,7 @@ function cadastrarVeiculo(evento){
 	var isValid;
 	//validar campos em branco e  acionar alerta
 	alertaDeCadastro = document.getElementById("apareceAlerta");
-	if ((nomeCompleto == "")||(modeloDoVeiculo == "")||(placaDoVeiculo == "")) {
+	if ((!nomeCompleto)||(!modeloDoVeiculo)||(!placaDoVeiculo)) {
 		alertaDeCadastro.classList.remove("alert-success");
 		alertaDeCadastro.classList.add("alert-danger");
 		alertaDeCadastro.innerHTML = "Os campos acima não foram preenchidos corretamente!";
