@@ -28,7 +28,7 @@ function cadastrarVeiculo(evento){
 				alertaDeCadastro.classList.add("alert-success");
 				alertaDeCadastro.innerHTML = "Cadastro realizado com sucesso!";
 				isValid = true;
-				if ((nomeCompleto == "")||(modeloDoVeiculo == "")||(placaDoVeiculo == "")) {
+				if ((!nomeCompleto)||(!modeloDoVeiculo)||(!placaDoVeiculo)) {
 					alertaDeCadastro.classList.remove("alert-success");
 					alertaDeCadastro.classList.add("alert-danger");
 					alertaDeCadastro.innerHTML = "Os campos acima não foram preenchidos corretamente!";
