@@ -14,7 +14,7 @@ function cadastrarVeiculo(evento){
 	if ((!nomeCompleto)||(!modeloDoVeiculo)||(!placaDoVeiculo)) {
 		alertaDeCadastro.classList.remove("alert-success");
 		alertaDeCadastro.classList.add("alert-danger");
-		alertaDeCadastro.innerHTML = "Os campos acima não foram preenchidos corretamente!";
+		alertaDeCadastro.innerHTML = "Please, fill in the fields correctly!";
 	}
 	for(var i = 0; i < this.elements.length; i++){
 		var elemento = this.elements[i];
@@ -26,12 +26,12 @@ function cadastrarVeiculo(evento){
 				elemento.parentNode.classList.remove("has-error");
 				alertaDeCadastro.classList.remove("alert-danger");
 				alertaDeCadastro.classList.add("alert-success");
-				alertaDeCadastro.innerHTML = "Cadastro realizado com sucesso!";
+				alertaDeCadastro.innerHTML = "Registration was successful!";
 				isValid = true;
 				if ((!nomeCompleto)||(!modeloDoVeiculo)||(!placaDoVeiculo)) {
 					alertaDeCadastro.classList.remove("alert-success");
 					alertaDeCadastro.classList.add("alert-danger");
-					alertaDeCadastro.innerHTML = "Os campos acima não foram preenchidos corretamente!";
+					alertaDeCadastro.innerHTML = "Please, fill in the fields correctly!";
 					isValid = false;
 				}
 				alertaDeCadastro.style.display = "block";
@@ -81,11 +81,11 @@ function atualizaTabela(){
 		var horas = veiculos[i].hora;
 		var minutos = veiculos[i].minutos;
 		resultados.innerHTML += '<tr>'+
-									'<td>'+ nome +'</td>'+
-									'<td>'+ modelo + '</td>'+
-									'<td>'+ placa + '</td>'+
+									'<td>'+ nome.toUpperCase() +'</td>'+
+									'<td>'+ modelo.toUpperCase() + '</td>'+
+									'<td>'+ placa.toUpperCase() + '</td>'+
 									'<td>'+ horas + ':' + minutos + '</td>'+
-									'<td><button onclick="removerCadastro(\''+ placa +'\')" class="btn btn-danger">Remover</button></td>'+
+									'<td><button onclick="removerCadastro(\''+ placa +'\')" class="btn btn-danger">Remove</button></td>'+
 								'</tr>';
 	}
 }
