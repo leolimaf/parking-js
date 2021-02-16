@@ -16,7 +16,7 @@ The project consists of a web app parking system that registers the model, the l
 - Bootstrap
 - JavaScript
 
-# 👨‍💻 Autor
+# 👨‍💻 Author
 Leonardo Lima Ferreira
 
 https://www.linkedin.com/in/leonardolimaf
